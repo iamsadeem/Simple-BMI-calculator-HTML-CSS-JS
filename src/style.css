@@ -1,0 +1,104 @@
+/* Import Google Font - Nanum Gothic */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Nanum+Gothic&family=Nanum+Gothic+Coding&family=Overlock:ital@1&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Silkscreen&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nanum Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html, body {
+    width: 100%;
+    height:100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(-45deg, #ffffff, #829499, #758c9a,#dbf8ff,#829599);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    padding-bottom: 100px; 
+}
+
+.box {
+    width: 500px;
+    background: #1e1e1e4f;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 1px 1px 15px 3px rgba(0, 0, 0, 0.14);
+}
+
+h1 {
+    color: rgba(255, 255, 255, 0.855);
+    font-weight: bold;
+    font-size: 36px;
+    padding: 30px 0;
+}
+
+.content {
+    padding: 0 30px;
+    
+}
+
+.input {
+    background: transparent;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.855);
+}
+
+.input label {
+    display: block;
+    font-size: 25px;
+    font-weight: 300;
+    color: rgba(238, 238, 238, 0.855);
+}
+
+.input input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #829599;
+    width: 55%;
+    text-align: center;
+    font-size: 18px;
+    font-family: "Nunito", sans-serif;
+    padding-bottom: 10px;
+}
+
+.input input::placeholder {
+    color: #3535359c;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px; 
+    text-align: center; 
+    line-height: 100px;
+    color: #1e1e1e8a;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
