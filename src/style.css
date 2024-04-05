@@ -1,5 +1,5 @@
-/* Import Google Font - Nanum Gothic */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Nanum+Gothic&family=Nanum+Gothic+Coding&family=Overlock:ital@1&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Silkscreen&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -27,51 +27,208 @@ body {
 
 .box {
     width: 500px;
-    background: #1e1e1e4f;
+    background: #1e1e1e4f; 
     border-radius: 10px;
     text-align: center;
     box-shadow: 1px 1px 15px 3px rgba(0, 0, 0, 0.14);
+    margin-top: 60px;
 }
 
 h1 {
-    color: rgba(255, 255, 255, 0.855);
+    color: #fff;
     font-weight: bold;
-    font-size: 36px;
-    padding: 30px 0;
+    font-size: 35px;
+    padding: 20px 0;
 }
 
 .content {
-    padding: 0 30px;
-    
+    padding: 0 40px; 
 }
 
-.input {
-    background: transparent;
+.age-input {
     padding: 20px 0;
-    margin-bottom: 20px;
     color: rgba(255, 255, 255, 0.855);
+    background: #0000002e;
+    border-radius: 12px;
+    margin-bottom: 10px;
 }
 
-.input label {
+.age-input label {
     display: block;
-    font-size: 25px;
-    font-weight: 300;
-    color: rgba(238, 238, 238, 0.855);
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(246, 246, 246);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-.input input {
+.age-input input {
     outline: none;
     border: none;
     border-bottom: 1px solid #829599;
     width: 55%;
     text-align: center;
-    font-size: 18px;
-    font-family: "Nunito", sans-serif;
+    font-size: 30px;
+    font-family: 'Digital-7 Mono', sans-serif;
+    border-radius: 0px;
+    background: transparent;
     padding-bottom: 10px;
+    color: rgba(238, 238, 238, 0.855);
+    margin-top: 15px;
 }
 
-.input input::placeholder {
-    color: #3535359c;
+.gender {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    background:  #0000002e;
+    border-radius: 12px;
+    padding: 20px 0;
+    margin-bottom: 10px;
+}
+
+.gender p {
+    font-family: "Nanum Gothic", sans-serif;
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(246, 246, 246);
+    padding-top: 3px;
+}
+
+.gender .container {
+    display: block;
+    position: relative;
+    padding-left: 40px;
+    padding-bottom: 4px; 
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.gender .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 22px;
+    width: 22px;
+    background-color: rgb(238, 238, 238);
+    border-radius: 50%;
+}
+
+.gender .container:hover input ~ .checkmark {
+    opacity: 0.9;
+}
+
+.gender .container input:checked ~ .checkmark::before {
+    content: "\2714"; 
+    color: #627578; 
+    font-size: 30px;
+    position: absolute;
+    top: 20%; 
+    left: 70%;
+    transform: translate(-50%, -50%) rotate(10deg);
+}
+
+.container-height-weight {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.weight-input, .height-input {
+    color: rgba(255, 255, 255, 0.855);
+    background: #0000002e;
+    border-radius: 12px;
+    padding: 30px 0;
+}
+
+.height-input {
+    margin-right: 10px;
+}
+
+.height-input label, .weight-input label {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(246, 246, 246);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.height-input input, .weight-input input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #829599;
+    width: 55%;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Digital-7 Mono', sans-serif;
+    border-radius: 0px;
+    background: transparent;
+    padding-bottom: 10px;    
+    color: rgba(238, 238, 238, 0.855);
+    margin-top: 15px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 12px 0;
+    cursor: pointer;
+    font-family: "Nanum Gothic", sans-serif;
+    color: rgba(238, 238, 238, 0.855);
+    background: #829599;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 12px;
+    width: 100%;
+    outline: none;
+    border: none;
+    transition: all 0.5s;
+}
+
+button:hover {
+    background: #2f393c;
+}
+
+.result {
+    padding: 10px 20px;
+}
+
+.result #result {
+    width: 91%;
+    font-size: 30px;
+    font-family: 'Digital-7 Mono', sans-serif;
+    color: rgba(238, 238, 238, 0.855);
+    background-color:  #0000002e;
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+#comment {
+    color: #829599;
+    font-weight: 800;
+}
+
+.comment {
+    display: none;
+    border: dashed 1px;
+    border-radius: 7px;
+    padding: 5px;
 }
 
 footer {
@@ -82,6 +239,10 @@ footer {
     text-align: center; 
     line-height: 100px;
     color: #1e1e1e8a;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 input[type="number"]::-webkit-inner-spin-button,

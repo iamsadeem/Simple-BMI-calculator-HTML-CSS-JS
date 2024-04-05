@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/digital-7-mono" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>BMI Calculator</title>
 </head>
@@ -12,37 +13,36 @@
         <div class="box">
             <h1>BMI Calculator</h1>
             <div class="content">
-                <div class="input">
-                    <label for="height">Age:</label>
-                    <input type="number" class="input" id="age" autocomplete="off" placeholder="enter your age here..." required>
+                <div class="age-input">
+                    <label for="age">Age:</label>
+                    <input type="number" class="input" id="age" autocomplete="off" required>
                 </div>
 
                 <div class="gender">
                     <label class="container">
-                        <input type="radio" name="radio" id="male"><p class="text">Male</p>
+                        <input type="radio" name="radio" id="female"><p class="text">Female</p>
                         <span class="checkmark"></span>
                     </label>
                     <label class="container">
-                        <input type="radio" name="radio" id="female"><p class="text">Female</p>
+                        <input type="radio" name="radio" id="male"><p class="text">Male</p>
                         <span class="checkmark"></span>
                     </label>
                 </div>
 
                 <div class="container-height-weight">
                     <div class="height-input">
-                        <label for="height">Height(cm)</label>
-                        <input type="number" id="height" required>
+                        <label for="height">Height (cm):</label>
+                        <input type="number" id="height" autocomplete="off" required>
                     </div>
                     <div class="weight-input">
-                        <label for="weight">Weight(kg)</label>
-                        <input type="number" id="weight" required>
+                        <label for="weight">Weight (kg):</label>
+                        <input type="number" id="weight" autocomplete="off" required>
                     </div>
                 </div>
 
                 <button class="calculate" id="submit">Calculate BMI</button>
             </div>
             <div class="result">
-                <p>Your BMI is</p>
                 <div id="result">00.00</div>
                 <p class="comment"></p>
             </div>
