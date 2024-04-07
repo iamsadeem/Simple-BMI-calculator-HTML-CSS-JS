@@ -269,3 +269,47 @@ input[type="number"]::-webkit-outer-spin-button {
     }
 }
 
+@media (max-width: 700px){
+
+    .box {
+        width: 450px;
+    }
+
+    .age-input label, .height-input label, .weight-input label, .gender p {
+        font-size: 14px;
+    }
+
+    .age-input input, .height-input input, .weight-input input, #result {
+        font-size: 24px;
+    }
+
+    .footer {
+        line-height: 120px;
+    }
+
+    .result-area {
+        width: 82.3%;
+    }
+
+    .checkmark {
+        height: 18px;
+        width: 18px;
+    }
+
+    .gender p {
+        padding-top: 1px;
+        padding-bottom: 1px;
+    }
+
+    .gender {
+        padding: 15px 0;
+    }
+    
+    .gender .container input:checked ~ .checkmark::before {
+        font-size: 23px;
+        left: 68%;
+    }
+    .comment {
+        font-size: 15px;
+    }
+}
