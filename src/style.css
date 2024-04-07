@@ -350,7 +350,8 @@ input[type="number"]::-webkit-outer-spin-button {
     }
     
     .gender .container input:checked ~ .checkmark::before {
-        font-size: 23px;
+        content: "✓";
+        font-size: 22px;
         left: 68%;
     }
     .comment {
@@ -359,5 +360,9 @@ input[type="number"]::-webkit-outer-spin-button {
 
     .modal-content {
         width: 300px;
+    }
+
+    footer {
+        padding-top: 70px;
     }
 }
