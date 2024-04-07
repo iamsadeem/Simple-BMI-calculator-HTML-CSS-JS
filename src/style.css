@@ -251,6 +251,50 @@ footer {
     user-select: none;
 }
 
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.584);
+    padding-top: 300px;
+}
+
+.modal-content {
+    background-color: #fefefed2;
+    margin: auto;
+    padding: 20px; 
+    width: 460px;
+    border-radius: 12px;
+}
+
+#modalText {
+    padding-top: 8px;
+    padding-right: 5px;
+    font-size: 25px;
+    font-family: "Nanum Gothic", sans-serif;
+    color: rgb(24, 23, 23);
+}
+
+.close-btn {
+    color: #696969;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    float: right;
+    margin-top: -8px; 
+}
+
+.close-btn:hover {
+    color: #cd8f8f; 
+}
+
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
