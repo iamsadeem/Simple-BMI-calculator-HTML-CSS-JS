@@ -22,7 +22,7 @@ body {
     background: linear-gradient(-45deg, #ffffff, #829499, #758c9a,#dbf8ff,#829599);
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
-    padding-bottom: 100px; 
+    padding-bottom: 100px;
 }
 
 .box {
@@ -243,7 +243,7 @@ footer {
     width: 100%;
     height: 100px; 
     text-align: center; 
-    line-height: 80px;
+    padding-top: 50px;
     color: #1e1e1e8a;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -313,10 +313,14 @@ input[type="number"]::-webkit-outer-spin-button {
     }
 }
 
-@media (max-width: 700px){
+@media (max-width: 700px) {
+
+    h1 {
+        font-size: 25px;
+    }    
 
     .box {
-        width: 450px;
+        width: 330px;
     }
 
     .age-input label, .height-input label, .weight-input label, .gender p {
@@ -327,12 +331,8 @@ input[type="number"]::-webkit-outer-spin-button {
         font-size: 24px;
     }
 
-    .footer {
-        line-height: 120px;
-    }
-
     .result-area {
-        width: 82.3%;
+        width: 76.1%;
     }
 
     .checkmark {
@@ -355,5 +355,9 @@ input[type="number"]::-webkit-outer-spin-button {
     }
     .comment {
         font-size: 15px;
+    }
+
+    .modal-content {
+        width: 300px;
     }
 }
