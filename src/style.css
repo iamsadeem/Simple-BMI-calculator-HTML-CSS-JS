@@ -351,8 +351,9 @@ input[type="number"]::-webkit-outer-spin-button {
     }
     
     .gender .container input:checked ~ .checkmark::before {
-        content: "✔";
-        font-size: 22px;
+        content: "✓";
+        font-size: 20px;
+        font-weight: bold;
         top: 26%;
         left: 68%;
     }
@@ -365,6 +366,6 @@ input[type="number"]::-webkit-outer-spin-button {
     }
 
     footer {
-        padding-top: 28px;
+        padding-top: 40px;
     }
 }
